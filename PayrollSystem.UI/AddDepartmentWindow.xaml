@@ -1,0 +1,18 @@
+﻿<Window x:Class="PayrollSystem.UI.AddDepartmentWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Добавить отдел" Height="137" Width="425" MinHeight="137" MinWidth="325">
+    <Grid>
+        <StackPanel>
+            <DockPanel>
+                <TextBlock Margin="5" Text="Название отдела: " FontSize="15"></TextBlock>
+                <TextBox x:Name="DepartmentNameTextBox" FontSize="15" Margin="5"></TextBox>
+            </DockPanel>
+            <DockPanel>
+                <TextBlock Margin="5" Text="Ставка: " FontSize="15"></TextBlock>
+                <TextBox x:Name="DepartmentRateTextBox" FontSize="15" Margin="5"></TextBox>
+            </DockPanel>
+            <Button x:Name="AddButton" Margin="20 5 20 0" FontSize="15" Content="Добавить" Click="AddDepartmentClick"></Button>
+        </StackPanel>
+    </Grid>
+</Window>
